@@ -1,13 +1,15 @@
 <?php include_once('header.php'); ?>
-<?php include_once('erro.php'); ?>
     
-    <section>
-        <form method="post" action="<?php echo base_url(); ?>login/logar">
-            <input type="text" name="username" placeholder="Username" required autofocus>
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="submit" value="Entrar">
+    <section class="login">
+        <span id="coneLogin"></span>
+        <h2>Sing-up</h2>
+        <?php include_once('erro.php'); ?>
+        <form method="post" action="<?php echo base_url(); ?>login/logar" class="form-signin" id="form-login">
+            <input type="text" name="username" placeholder="Username" class="form-control" required autofocus>
+            <input type="password" name="password" placeholder="Password" class="form-control" required>
+            <input type="submit" value="Entrar" class="btn btn-lg btn-danger btn-block">
         </form>
+        <a href="register" class="btn btn-block btn-warning btn-register">Cadastre-se</a>
     </section>
-    <a href="register">Cadastre-se</a>
-        
+
 <?php include_once('footer.php'); ?>
