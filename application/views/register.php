@@ -2,7 +2,7 @@
 
 <div class="container-fluid">
     <section class="container-register row" >
-        <?php include_once('erro.php'); ?>
+        <?php include_once('erro_success.php'); ?>
         <form method="post" action="register/singup" name="formRegister" role="form">
             <div class="form-group">
                 <label for="inputNameText">Nome:</label>
