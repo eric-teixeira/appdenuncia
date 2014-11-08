@@ -1,6 +1,6 @@
 <?php include_once('header.php'); ?>
     
-    <section class="login">
+    <section class="login container-fluid">
         <span id="coneLogin"></span>
         <h2>Sing-up</h2>
         <?php include_once('erro.php'); ?>

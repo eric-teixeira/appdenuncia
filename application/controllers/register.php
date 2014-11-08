@@ -25,8 +25,8 @@ class Register extends CI_Controller
                 if($this->register_model->validatePassword($dados))
                 {
                     $this->register_model->registerUser($dados);
-                    echo "Cadastrado!";
-                    exit();
+                    $this->data['success'] = "Cadastrado com sucesso.";
+                    $this->index();
                 }
                 else
                 {

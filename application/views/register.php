@@ -1,32 +1,32 @@
 <?php include_once('header.php'); ?>
 
-<h2>Cadastre-se</h2>
-<?php include_once('erro.php'); ?>
-
-<section>
-    <form method="post" action="register/singup" name="formRegister">
-        <label>
-            <span>Nome:</span>
-            <input type="text" name="name" required autofocus>
-        </label>
-        <label>
-            <span>E-mail:</span>
-            <input type="email" name="email" required>
-        </label>
-        <label>
-            <span>Username:</span>
-            <input type="text" name="username" required>
-        </label>
-        <label>
-            <span>Senha:</span>
-            <input type="password" name="password" required>
-        </label>
-        <label>
-            <span>Repetir Senha:</span>
-            <input type="password" name="confirmPassword" required>
-        </label>
-        <input type="submit" value="Cadastrar">
-    </form>
-</section>
+<div class="container-fluid">
+    <section class="container-register row" >
+        <?php include_once('erro.php'); ?>
+        <form method="post" action="register/singup" name="formRegister" role="form">
+            <div class="form-group">
+                <label for="inputNameText">Nome:</label>
+                <input type="text" name="name" id="inputNameText" class="form-control" required autofocus>
+            </div>
+            <div class="form-group" id="email-register">
+                <label for="inputEmailText">E-mail:</label>
+                <input type="email" name="email" id="inputEmailText" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="inputUsernameText">Username:</label>
+                <input type="text" name="username" id="inputUsernameText" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="inputPasswordText">Senha:</label>
+                <input type="password" name="password" id="inputPasswordText" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="inputPasswordRepeatText">Repetir Senha:</label>
+                <input type="password" name="confirmPassword" id="inputPasswordRepeatText" class="form-control" required>
+            </div>
+            <input type="submit" value="Cadastrar"class="btn btn-success">
+        </form>
+    </section>
+</div>
 
 <?php include_once('footer.php'); ?>

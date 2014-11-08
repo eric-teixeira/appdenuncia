@@ -12,6 +12,12 @@
         <!-- JS -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
+        <script src="<?php echo base_url();; ?>assets/js/utility.js"></script>
     </head>
     <body>
+        <?php if($this->uri->segment(1) != '' && $this->uri->segment(1) != 'login'): ?>
+            <div id="header-fixed">
+                <a href="<?php echo base_url(); ?>">APP Denúncia</a>
+            </div>
+        <?php endif; ?>
         <div class="container bg"> 
