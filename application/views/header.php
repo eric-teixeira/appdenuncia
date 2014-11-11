@@ -17,7 +17,9 @@
     <body>
         <?php if($this->uri->segment(1) != '' && $this->uri->segment(1) != 'login'): ?>
             <div id="header-fixed">
-                <a href="<?php echo base_url(); ?>">APP Denúncia</a>
+                <a href="<?php echo base_url(); ?>timeline">APP Denúncia</a>
             </div>
         <?php endif; ?>
-        <div class="container bg"> 
+        <?php if($this->uri->segment(1) != 'timeline'): ?>
+            <div class="container bg"> 
+        <?php endif; ?>

@@ -1,20 +1,11 @@
-<li>
-    <a href="#">Categorias</a>
-    <ol>
-        <li>
-            <a href="#">Ruas</a>
-        </li>
-        <li>
-            <a href="#">Eletricidade</a>
-        </li>
-        <li>
-            <a href="#">Rios</a>
-        </li>
-        <li>
-            <a href="#">Trânsito</a>
-        </li>
-        <li>
-            <a href="#">Estacionamento</a>
-        </li>
-    </ol>
-</li>
+<ul class="no-mg no-pd">
+    <li class="menu-item">
+        <a href="denounces"><span class="glyphicon glyphicon-plus span-icon btn-lg"></span></a>
+    </li>
+    <li class="menu-item">
+        <a href="#"><span class="glyphicon glyphicon-wrench span-icon btn-lg"></span></a>
+    </li>
+    <li class="menu-item">
+        <a href="login/sair"><span class="glyphicon glyphicon-off span-icon btn-lg"></span></a>
+    </li>
+</ul>

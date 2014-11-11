@@ -75,3 +75,47 @@ form input {
 .ajustConfirm {
     margin-top: 10px;
 }
+
+.menu{
+    height: 747px;
+    margin-top: -28px;
+    padding-top: 0px;
+    display: block;
+    background-color: #000;
+    position: fixed;
+    color: #FFF;
+}
+
+.container-timeline{
+    background-color: #CCC;
+    display: block;
+    padding-top: 90px;
+}
+
+.span-icon {
+    color: #FFF;
+}
+
+.span-icon:hover {
+    color: #FF4500;
+}
+
+ul li {
+   list-style: none;
+}
+
+.menu-item {
+    margin-top: 15px;
+}
+
+.no-pd {
+    padding: 0px;
+}
+
+.no-mg {
+    margin: 0px;
+}
+
+.col-md-01 {
+    width: 5.333333% !important;
+}
