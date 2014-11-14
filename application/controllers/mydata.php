@@ -12,7 +12,9 @@ class mydata extends CI_Controller
     public function index()
     {
         $this->load->model('mydata_model');
-        $this->mydata_model->loadData();
+        $this->load->model('login_model');
+        $this->data['data'] = $this->mydata_model->loadData();
+        $this->data['username'] = $this->login_model->getUser();
         $this->load->view('mydata', $this->data);
     }
 }

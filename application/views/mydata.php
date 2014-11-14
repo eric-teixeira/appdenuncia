@@ -8,15 +8,15 @@
             <form method="post" action="register/singup" name="formRegister" role="form">
                 <div class="form-group">
                     <label for="inputNameText">Nome:</label>
-                    <input type="text" name="name" id="inputNameText" class="form-control" disabled>
+                    <input type="text" name="name" id="inputNameText" class="form-control" value="<?php echo $data[0]->name; ?>" disabled>
                 </div>
                 <div class="form-group" id="email-register">
                     <label for="inputEmailText">E-mail:</label>
-                    <input type="email" name="email" id="inputEmailText" class="form-control" disabled>
+                    <input type="email" name="email" id="inputEmailText" class="form-control" value="<?php echo $data[0]->email; ?>" disabled>
                 </div>
                 <div class="form-group">
                     <label for="inputUsernameText">Username:</label>
-                    <input type="text" name="username" id="inputUsernameText" class="form-control" disabled>
+                    <input type="text" name="username" id="inputUsernameText" class="form-control" value="<?php echo $username->username; ?>" disabled>
                 </div>
             </form>
         </div>

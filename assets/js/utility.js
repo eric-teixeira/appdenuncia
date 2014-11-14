@@ -3,7 +3,6 @@ $(document).ready(function() {
     $(".mini-cone").click(function (){
         var $this = $(this);
         var id = $('#idDenounce').text();
-        alert($(".mini-cone").parent().text());
         
         $.ajax({
             url: 'timeline/addcone',

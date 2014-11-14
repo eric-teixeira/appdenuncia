@@ -41,4 +41,13 @@ class login_model extends CI_Model {
     {
         $this->session->sess_destroy();
     }
+    
+    public function getUser()
+    {
+        $this->load->library('session');
+        $session_data = $this->session->userdata('appenuncia_session');
+        $this->db->select('username');
+        $result = $this->db->get_where('login', array('id_login' => $session_data['id_login']))->result()[0];
+        return $result;
+    }
 }
