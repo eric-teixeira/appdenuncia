@@ -6,22 +6,22 @@ class denounces_model extends CI_Model {
         parent::__construct();
     }
     
-    public function getCategory()
-    {
-        $query = $this->db->get('category');
-        return $query;
-    }
-    
     public function getStates()
     {
-        $query = $this->db->get('states');
+        $query = $this->db->get('estado');
         return $query;
     }
     
     public function getCity()
     {
-        $this->db->order_by("name", "asc"); 
-        $query = $this->db->get('city');
+        $this->db->order_by("nome", "asc"); 
+        $query = $this->db->get('cidade');
         return $query;
+    }
+    
+    public function register($dados, $arquivo)
+    {   
+        $dados['image'] = $arquivo['tmp_name'];
+        $this->db->insert('denounces', $dados);
     }
 }

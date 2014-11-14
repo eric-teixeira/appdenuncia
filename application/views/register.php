@@ -24,7 +24,7 @@
                 <label for="inputPasswordRepeatText">Repetir Senha:</label>
                 <input type="password" name="confirmPassword" id="inputPasswordRepeatText" class="form-control" required>
             </div>
-            <input type="submit" value="Cadastrar"class="btn btn-success">
+            <input type="submit" value="Cadastrar" class="btn btn-success">
         </form>
     </section>
 </div>
