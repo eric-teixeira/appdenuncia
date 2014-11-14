@@ -13,44 +13,19 @@
                         <div class="row">
                     <?php endif; ?>
                         <div class="col-md-3 bl-2">
-                            <img src="<?php echo base_url(); ?>assets/uploads/<?php echo $item->image; ?>">
+                            <img src="<?php echo base_url(); ?>assets/uploads/<?php echo $item->image;?>" class="img-timeline">
+                            <p class="description-item"><em><?php echo $item->description ; ?></em></p>
+                            <div>
+                                <span class="mini-cone"></span>
+                                <span class="qtde-apoios"><strong><?php echo $item->qtdeCones; ?></strong></span>
+                            </div>
+                            <span id="idDenounce" hidden><?php echo $item->id_denounce; ?></span>
                         </div>
                     <?php if($i == 4): ?>
                         </div>
                     <?php $i = 0; endif; ?>
                 <?php endforeach; ?>
             </div>
-            
-<!--                <div class="row">
-                    <div class="col-md-3 bl-2">
-                        <img src="<?php echo base_url(); ?>assets/images/foto.jpg">
-                    </div>
-                    <div class="col-md-3 bl-2">
-                        <img src="<?php echo base_url(); ?>assets/images/foto.jpg">
-                    </div>
-                    <div class="col-md-3 bl-2">
-                        <img src="<?php echo base_url(); ?>assets/images/foto.jpg">
-                    </div>
-                    <div class="col-md-3 bl-2">
-                        <img src="<?php echo base_url(); ?>assets/images/foto.jpg">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 bl-2">
-                        <img src="<?php echo base_url(); ?>assets/images/foto.jpg">
-                    </div>
-                    <div class="col-md-3 bl-2">
-                        <img src="<?php echo base_url(); ?>assets/images/foto.jpg">
-                    </div>
-                    <div class="col-md-3 bl-2">
-                        <img src="<?php echo base_url(); ?>assets/images/foto.jpg">
-                    </div>
-                    <div class="col-md-3 bl-2">
-                        <img src="<?php echo base_url(); ?>assets/images/foto.jpg">
-                    </div>
-                </div>
-            </div>
-        </div>-->
     </section>
 
 <?php include_once('footer.php'); ?>

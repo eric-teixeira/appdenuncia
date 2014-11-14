@@ -8,7 +8,7 @@ class timeline_model extends CI_Model {
     
     public function getDenounces()
     {
-        $this->db->select('image');
+        $this->db->select('id_denounce, image, description, qtdeCones');
         $result = $this->db->get('denounces')->result();
         return $result;
     }

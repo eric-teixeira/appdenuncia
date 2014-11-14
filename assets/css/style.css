@@ -192,3 +192,21 @@ nav ul li {
 .icon-home {
     margin-left: -7px;
 }
+
+.description-item {
+    display: block;
+}
+
+.mini-cone {
+    width: 32px;
+    height: 32px;
+    background: url('../images/mini-cone.png') no-repeat;
+    display: block;
+    float: left;
+}
+
+.qtde-apoios {
+    float: left;
+    margin-top: -6px;
+    font-size: 20px;
+}
