@@ -13,6 +13,8 @@ class Timeline extends CI_Controller
     
     public function index()
     {
-        $this->load->view('timeline');
+        $this->load->model('timeline_model');
+        $this->data['denounces'] = $this->timeline_model->getDenounces();
+        $this->load->view('timeline', $this->data);
     }
 }

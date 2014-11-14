@@ -158,17 +158,11 @@ nav ul li {
     font-size: 30px !important;
 }
 
-.bl-1, .bl-2 {
+.bl-2 {
     background-color: #FFF;
     padding: 5px;
-    border: 1px solid #000;
 }
 
-.bl-1 img{
-    width: 667px;
-    height: 684px;
-    border-radius: 5px;
-} 
 .bl-2 img {
     width: 315px;
     height: 220px;
