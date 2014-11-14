@@ -93,7 +93,7 @@ class Denounces extends CI_Controller
         
         $this->load->model('denounces_model');
         
-        if($this->denounces_model->register($this->input->post(), $arquivo))
+        if($this->denounces_model->register($this->input->post(), $arquivo['name']))
             $this->data['error'] = "Ocorreu um erro ao salvar!";
         else
             $this->data['success'] = "Cadastrada com sucesso!";

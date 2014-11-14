@@ -21,7 +21,7 @@ class denounces_model extends CI_Model {
     
     public function register($dados, $arquivo)
     {   
-        $dados['image'] = $arquivo['tmp_name'];
+        $dados['image'] = $arquivo;
         $this->db->insert('denounces', $dados);
     }
 }
