@@ -187,3 +187,10 @@ nav ul li {
 .nav-menu {
     margin-top: 220px;
 }
+
+.form-mydata {
+    margin-top: 50px;
+}
+.form-mydata label {
+    margin-top: 20px;
+}

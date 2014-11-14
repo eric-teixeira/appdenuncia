@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="It's a APP of denounces in Brazil!">
-        <title>Base Timeline</title>
+        <title>APP Denúncia</title>
         <!-- CSS -->
         <link href="<?php echo base_url(); ?>assets/css/style.css" rel='stylesheet' type='text/css'>
         <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
@@ -22,6 +22,6 @@
             </div>
         </header>
         <?php endif; ?>
-        <?php if($this->uri->segment(1) != 'timeline' && $this->uri->segment(1) != 'denounces'): ?>
+        <?php if($this->uri->segment(1) != 'timeline' && $this->uri->segment(1) != 'denounces' && $this->uri->segment(1) != 'mydata'): ?>
             <div class="container bg"> 
         <?php endif; ?>
